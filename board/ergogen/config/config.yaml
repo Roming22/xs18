@@ -28,7 +28,11 @@ points:
       padding: ky
     rows:
       home: {}
-    columns.pinky: {}
+    columns:
+      pinky: {}
+      ring: {}
+      middle: {}
+      index: {}
 outlines:
     __key_outline:
       - what: rectangle
