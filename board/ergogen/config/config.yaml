@@ -13,6 +13,9 @@ presets:
 units:
   # Keyboard geometry
   side_angle: 22    # Angle between the index column and the X axis
+  ring_offsety: 7     # Vertical offset between pinky and ring columns
+  middle_offsety: 4   # Vertical offset between ring and middle columns
+  index_offsety: -6   # Vertical offset between middle and index columns
   # Defaults/Constants
   $default_height: 0  # Points invisible by default unless height/width explicitly set
   $default_width: 0
@@ -33,16 +36,17 @@ points:
       columns:
         pinky:
           rows:
-            home:
-              bind: 0
             top:
-              bind: 0
               skip: true
         ring:
-          rows.home:
-            bind: 0
-        middle: {}
-        index: {}
+          key:
+            stagger: ring_offsety
+        middle:
+          key:
+            stagger: middle_offsety
+        index:
+          key:
+            stagger: index_offsety
       mirror:
         ref: matrix_index_top
         distance: 5kx
@@ -59,7 +63,7 @@ points:
 outlines:
     __key_outline:
       - what: rectangle
-        bound: true
+        bound: false
         size: [kx+1, ky+1]
         where:
           - /matrix_.*/
