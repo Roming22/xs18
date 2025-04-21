@@ -28,6 +28,7 @@ points:
       padding: ky
     rows:
       home: {}
+      top: {}
     columns:
       pinky: {}
       ring: {}
