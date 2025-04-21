@@ -12,17 +12,22 @@ presets:
     capy: 16.5    # Keycap size vertical
 units:
   # Keyboard geometry
-  side_angle: 22    # Angle between the index column and the X axis
+  side_angle: 40    # Angle between the index column and the X axis
   ring_angle: 7     # Angle between pinky and ring columns
-  middle_angle: 4   # Angle between ring and middle columns
+  middle_angle: 2   # Angle between ring and middle columns
   index_angle: 11   # Angle between middle and index columns
+  ring_offsetx: 4     # Horizontal offset between pinky and ring columns
+  middle_offsetx: 0   # Horizontal offset between ring and middle columns
+  index_offsetx: 1    # Horizontal offset between middle and index columns
   ring_offsety: 7     # Vertical offset between pinky and ring columns
   middle_offsety: 4   # Vertical offset between ring and middle columns
   index_offsety: -6   # Vertical offset between middle and index columns
-  thumb_angle: 11   # Angle between index columns and the home thumb key
+  thumb_angle: 7   # Angle between index columns and the home thumb key
   thumb_splay: 11   # Angle between the thumb columns
-  thumb_offsetx: 12   # Horizontal distance between the index column and home thumb key
+  thumb_offsetx: 11   # Horizontal distance between the index column and home thumb key
   thumb_offsety: 3    # Vertical distance between the index column and home thumb key
+  thumb_spread: 1   # Horizontal distance between the thumb columns
+  thumb_tuney: -2    # Tune the vertical distance between the thumb columns
   # Defaults/Constants
   $default_height: 0  # Points invisible by default unless height/width explicitly set
   $default_width: 0
@@ -50,18 +55,21 @@ points:
         ring:
           key:
             splay: -ring_angle
+            spread: kx+ring_offsetx
             stagger: ring_offsety
         middle:
           key:
             splay: -middle_angle
+            spread: kx+middle_offsetx
             stagger: middle_offsety
         index:
           key:
             splay: -index_angle
+            spread: kx+index_offsetx
             stagger: index_offsety
       mirror:
         ref: matrix_index_top
-        distance: 5kx
+        distance: 70
       rotate: -side_angle
     thumb:
       anchor:
@@ -75,11 +83,13 @@ points:
         outer:
           key:
             splay: -thumb_splay
+            spread: kx+thumb_spread
+            stagger: thumb_tuney
       mirror.$extends: points.zones.matrix.mirror
 outlines:
     __key_outline:
       - what: rectangle
-        bound: 3
+        bound: 0
         size: [kx+1, ky+1]
         where:
           - /matrix_.*/
