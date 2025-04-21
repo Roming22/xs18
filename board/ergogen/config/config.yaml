@@ -30,8 +30,16 @@ points:
       home: {}
       top: {}
     columns:
-      pinky: {}
-      ring: {}
+      pinky:
+        rows:
+          home:
+            bind: 0
+          top:
+            bind: 0
+            skip: true
+      ring:
+        rows.home:
+          bind: 0
       middle: {}
       index: {}
 outlines:
