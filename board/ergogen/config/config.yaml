@@ -20,28 +20,37 @@ units:
   $default_height: 0  # Points invisible by default unless height/width explicitly set
   $default_width: 0
 points:
-  zones.matrix:
-    key:
-      width: capx
-      height: capy
-      spread: kx
-      padding: ky
-    rows:
-      home: {}
-      top: {}
-    columns:
-      pinky:
-        rows:
-          home:
+  zones:
+    matrix:
+      key:
+        width: capx
+        height: capy
+        spread: kx
+        padding: ky
+      rows:
+        home: {}
+        top: {}
+      columns:
+        pinky:
+          rows:
+            home:
+              bind: 0
+            top:
+              bind: 0
+              skip: true
+        ring:
+          rows.home:
             bind: 0
-          top:
-            bind: 0
-            skip: true
-      ring:
-        rows.home:
-          bind: 0
-      middle: {}
-      index: {}
+        middle: {}
+        index: {}
+    thumb:
+      anchor:
+        ref: matrix_index_home
+        shift: [kx, -ky]
+      key.$extends: points.zones.matrix.key
+      columns:
+        home: {}
+        outer: {}
 outlines:
     __key_outline:
       - what: rectangle
@@ -49,6 +58,7 @@ outlines:
         size: [kx+1, ky+1]
         where:
           - /matrix_.*/
+          - /thumb_.*/
     _board:
       - name: __key_outline
         fillet: 1.5
@@ -57,11 +67,13 @@ outlines:
         size: [capx, capy]
         where:
           - /matrix_.*/
+          - /thumb_.*/
     _switches:
       - what: rectangle
         size: [sw_x, sw_y]
         where:
           - /matrix_.*/
+          - /thumb_.*/
     keyboard:
       - _board
       - ^_keycaps
