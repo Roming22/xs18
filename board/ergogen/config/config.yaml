@@ -43,6 +43,9 @@ points:
             bind: 0
         middle: {}
         index: {}
+      mirror:
+        ref: matrix_index_top
+        distance: 5kx
     thumb:
       anchor:
         ref: matrix_index_home
@@ -51,6 +54,7 @@ points:
       columns:
         home: {}
         outer: {}
+      mirror.$extends: points.zones.matrix.mirror
 outlines:
     __key_outline:
       - what: rectangle
