@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+[ -n "${DEBUG:-}" ] && set -x
+SCRIPT_DIR="$(
+    cd "$(dirname "$0")" >/dev/null
+    pwd
+)"
+
+usage() {
+    echo "Usage:
+    ${0##*/} [options] command_0 ... command_n
+
+Commands:"
+for COMMAND_SH in $(
+    cd "$SCRIPT_DIR";
+    ls ./*.sh
+); do
+    echo "    ${COMMAND_SH/.sh/}"
+done
+echo "
+Optional arguments:
+    -d, --debug
+        Activate tracing/debug mode.
+    -h, --help
+        Display this message.
+
+Example:
+    ${0##*/} ergogen
+" >&2
+}
+
+parse_args() {
+    COMMANDS=()
+    while [[ $# -gt 0 ]]; do
+        case $1 in
+        -d | --debug)
+            set -x
+            DEBUG="--debug"
+            export DEBUG
+            ;;
+        -h | --help)
+            usage
+            exit 0
+            ;;
+        *)
+            COMMANDS+=( "$1" )
+            ;;
+        esac
+        shift
+    done
+}
+
+init() {
+    PROJECT_DIR="$(
+        cd "$(dirname "$SCRIPT_DIR")" >/dev/null
+        pwd
+    )"
+    cd "$PROJECT_DIR"
+}
+
+action() {
+    for COMMAND in "${COMMANDS[@]}"; do
+        CMD="$SCRIPT_DIR/$COMMAND.sh"
+        if [ ! -e "$CMD" ]; then
+            usage
+            echo "[ERROR] Unknown command: $COMMAND"
+            exit 1
+        fi
+        "$CMD"
+    done
+}
+
+main() {
+    parse_args "$@"
+    init
+    action
+}
+
+if [ "${BASH_SOURCE[0]}" == "$0" ]; then
+    main "$@"
+fi

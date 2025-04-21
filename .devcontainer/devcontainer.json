@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json
+{
+    "name": "xs18",
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    // Add the IDs of extensions you want installed when the container is created.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.vscode-pull-request-github",
+                "timonwong.shellcheck",
+                "yzhang.markdown-all-in-one"
+            ]
+        }
+    },
+    "onCreateCommand": ["/workspace/tools/dependencies/install.sh"],
+    "runArgs": [
+        "--user=root",
+        "--volume=${localWorkspaceFolder}:/workspace:Z"
+    ],
+    // Set *default* container specific settings.json values on container create.
+    // "settings": {
+    // },
+    "workspaceFolder": "/workspace",
+    "workspaceMount": ""
+}
