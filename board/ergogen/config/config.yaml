@@ -16,6 +16,8 @@ units:
   ring_offsety: 7     # Vertical offset between pinky and ring columns
   middle_offsety: 4   # Vertical offset between ring and middle columns
   index_offsety: -6   # Vertical offset between middle and index columns
+  thumb_offsetx: 12   # Horizontal distance between the index column and home thumb key
+  thumb_offsety: 3    # Vertical distance between the index column and home thumb key
   # Defaults/Constants
   $default_height: 0  # Points invisible by default unless height/width explicitly set
   $default_width: 0
@@ -54,7 +56,7 @@ points:
     thumb:
       anchor:
         ref: matrix_index_home
-        shift: [kx, -ky]
+        shift: [thumb_offsetx, -ky-thumb_offsety]
       key.$extends: points.zones.matrix.key
       columns:
         home: {}
