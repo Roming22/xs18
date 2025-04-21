@@ -1,0 +1,59 @@
+meta:
+  engine: 4.1.0
+  name: xs18
+  version: 0.1
+  author: Roming22
+  url: https://github.com/Roming22/xs18
+presets:
+  choc_v1:
+    sw_x: 14      # Key plate footprint horizontal
+    sw_y: 14      # Key plate footprint vertical
+    capx: 17.5    # Keycap size horizontal
+    capy: 16.5    # Keycap size vertical
+units:
+  $extends: presets.choc_v1
+  kx: capx + 1    # Key spacing horizontal
+  ky: capy + 1    # Key spacing vertical
+
+  # Defaults/Constants
+  # ====================
+  $default_height: 0  # Points invisible by default unless height/width explicitly set
+  $default_width: 0
+points:
+  zones.matrix:
+    key:
+      width: capx
+      height: capy
+      spread: kx
+      padding: ky
+    rows:
+      home: {}
+    columns.pinky: {}
+outlines:
+    __key_outline:
+      - what: rectangle
+        bound: true
+        size: [kx+1, ky+1]
+        where:
+          - /matrix_.*/
+    _board:
+      - name: __key_outline
+        fillet: 1.5
+    _keycaps:
+      - what: rectangle
+        size: [capx, capy]
+        where:
+          - /matrix_.*/
+    _switches:
+      - what: rectangle
+        size: [sw_x, sw_y]
+        where:
+          - /matrix_.*/
+    keyboard:
+      - _board
+      - ^_keycaps
+    switchplate:
+      - _board
+      - operation: subtract
+        name: _switches
+        fillet: 0.5
