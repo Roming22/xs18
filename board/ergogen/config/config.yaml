@@ -13,9 +13,14 @@ presets:
 units:
   # Keyboard geometry
   side_angle: 22    # Angle between the index column and the X axis
+  ring_angle: 7     # Angle between pinky and ring columns
+  middle_angle: 4   # Angle between ring and middle columns
+  index_angle: 11   # Angle between middle and index columns
   ring_offsety: 7     # Vertical offset between pinky and ring columns
   middle_offsety: 4   # Vertical offset between ring and middle columns
   index_offsety: -6   # Vertical offset between middle and index columns
+  thumb_angle: 11   # Angle between index columns and the home thumb key
+  thumb_splay: 11   # Angle between the thumb columns
   thumb_offsetx: 12   # Horizontal distance between the index column and home thumb key
   thumb_offsety: 3    # Vertical distance between the index column and home thumb key
   # Defaults/Constants
@@ -37,17 +42,22 @@ points:
         top: {}
       columns:
         pinky:
+          key:
+            splay: ring_angle+middle_angle+index_angle
           rows:
             top:
               skip: true
         ring:
           key:
+            splay: -ring_angle
             stagger: ring_offsety
         middle:
           key:
+            splay: -middle_angle
             stagger: middle_offsety
         index:
           key:
+            splay: -index_angle
             stagger: index_offsety
       mirror:
         ref: matrix_index_top
@@ -59,13 +69,17 @@ points:
         shift: [thumb_offsetx, -ky-thumb_offsety]
       key.$extends: points.zones.matrix.key
       columns:
-        home: {}
-        outer: {}
+        home:
+          key:
+            splay: -thumb_angle
+        outer:
+          key:
+            splay: -thumb_splay
       mirror.$extends: points.zones.matrix.mirror
 outlines:
     __key_outline:
       - what: rectangle
-        bound: false
+        bound: 3
         size: [kx+1, ky+1]
         where:
           - /matrix_.*/
