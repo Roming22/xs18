@@ -35,6 +35,11 @@ units:
   $extends: presets.choc_v1
   kx: capx + 1    # Key spacing horizontal
   ky: capy + 1    # Key spacing vertical
+  xiao_x: 17.8
+  xiao_y: 21
+  mcu_x: xiao_x
+  mcu_y: xiao_y
+
 points:
   zones:
     matrix:
@@ -87,6 +92,16 @@ points:
             spread: kx+thumb_spread
             stagger: thumb_tuney
       mirror.$extends: points.zones.matrix.mirror
+    reference_top_center:
+      anchor:
+        aggregate.parts: [matrix_index_top, mirror_matrix_index_top]
+    mcu:
+      anchor:
+        ref: reference_top_center
+        shift: [0, -0.5xiao_y]
+      key:
+        width: xiao_x
+        height: xiao_y
 outlines:
     __key_outline:
       - what: polygon
@@ -128,6 +143,13 @@ outlines:
         where:
           - /matrix_.*/
           - /thumb_.*/
+    _mcu:
+      - what: rectangle
+        where: mcu
+        size: [xiao_x, xiao_y]
+      - what: rectangle
+        where: reference_top_center
+        size: [8, 6]
     _switches:
       - what: rectangle
         size: [sw_x, sw_y]
@@ -137,8 +159,10 @@ outlines:
     keyboard:
       - _board
       - ^_keycaps
+      - ^_mcu
     switchplate:
       - _board
       - operation: subtract
         name: _switches
         fillet: 0.5
+      - ^_mcu
