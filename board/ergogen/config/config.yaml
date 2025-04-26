@@ -12,7 +12,8 @@ presets:
     capy: 16.5    # Keycap size vertical
 units:
   # Keyboard geometry
-  side_angle: 40    # Angle between the index column and the X axis
+  side_angle: 40        # Angle between the index column and the X axis
+  mirror_distance: 35   # Distance between the top of the index column and the X axis
   ring_angle: 7     # Angle between pinky and ring columns
   middle_angle: 2   # Angle between ring and middle columns
   index_angle: 11   # Angle between middle and index columns
@@ -69,7 +70,7 @@ points:
             stagger: index_offsety
       mirror:
         ref: matrix_index_top
-        distance: 70
+        distance: 2mirror_distance
       rotate: -side_angle
     thumb:
       anchor:
@@ -88,15 +89,39 @@ points:
       mirror.$extends: points.zones.matrix.mirror
 outlines:
     __key_outline:
-      - what: rectangle
-        bound: 0
-        size: [kx+1, ky+1]
-        where:
-          - /matrix_.*/
-          - /thumb_.*/
+      - what: polygon
+        points:
+          - ref: thumb_outer
+            shift: [0.5kx+1, 0.5ky+10]
+          - ref: thumb_outer
+            shift: [0.5kx+1, -0.5ky-1]
+          - ref: thumb_home
+            shift: [-0.5kx, -0.5ky]
+          - ref: matrix_pinky_home
+            shift: [-0.5kx-1, -0.5ky-1]
+          - ref: matrix_pinky_home
+            shift: [-0.5kx-1, 0.5ky-1]
+          - ref: matrix_ring_top
+            shift: [-0.5kx, 0.5ky+6]
+          - ref: matrix_middle_top
+            shift: [0.5kx+16, 0.5ky+1]
+          - ref: mirror_matrix_middle_top
+            shift: [0.5kx+16, 0.5ky+1]
+          - ref: mirror_matrix_ring_top
+            shift: [-0.5kx, 0.5ky+6]
+          - ref: mirror_matrix_pinky_home
+            shift: [-0.5kx-1, 0.5ky-1]
+          - ref: mirror_matrix_pinky_home
+            shift: [-0.5kx-1, -0.5ky-1]
+          - ref: mirror_thumb_home
+            shift: [-0.5kx, -0.5ky]
+          - ref: mirror_thumb_outer
+            shift: [0.5kx+1, -0.5ky-1]
+          - ref: mirror_thumb_outer
+            shift: [0.5kx+1, 0.5ky+10]
     _board:
       - name: __key_outline
-        fillet: 1.5
+        fillet: 6
     _keycaps:
       - what: rectangle
         size: [capx, capy]
