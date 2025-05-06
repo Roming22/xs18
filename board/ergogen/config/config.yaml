@@ -17,10 +17,10 @@ units:
   ring_angle: 7     # Angle between pinky and ring columns
   middle_angle: 2   # Angle between ring and middle columns
   index_angle: 11   # Angle between middle and index columns
-  ring_offsetx: 4     # Horizontal offset between pinky and ring columns
+  ring_offsetx: 1     # Horizontal offset between pinky and ring columns
   middle_offsetx: 0   # Horizontal offset between ring and middle columns
   index_offsetx: 1    # Horizontal offset between middle and index columns
-  ring_offsety: 7     # Vertical offset between pinky and ring columns
+  ring_offsety: 4     # Vertical offset between pinky and ring columns
   middle_offsety: 4   # Vertical offset between ring and middle columns
   index_offsety: -6   # Vertical offset between middle and index columns
   thumb_angle: 7   # Angle between index columns and the home thumb key
@@ -115,17 +115,17 @@ outlines:
           - ref: matrix_pinky_home
             shift: [-0.5kx-1, -0.5ky-1]
           - ref: matrix_pinky_home
-            shift: [-0.5kx-1, 0.5ky-1]
-          - ref: matrix_ring_top
-            shift: [-0.5kx, 0.5ky+6]
+            shift: [-0.5kx-1, 0.5ky]
           - ref: matrix_middle_top
-            shift: [0.5kx+16, 0.5ky+1]
+            shift: [-1.5kx-3, 0.5ky+1]
+          - ref: matrix_middle_top
+            shift: [1.5kx, 0.5ky+1]
           - ref: mirror_matrix_middle_top
-            shift: [0.5kx+16, 0.5ky+1]
-          - ref: mirror_matrix_ring_top
-            shift: [-0.5kx, 0.5ky+6]
+            shift: [1.5kx, 0.5ky+1]
+          - ref: mirror_matrix_middle_top
+            shift: [-1.5kx-3, 0.5ky+1]
           - ref: mirror_matrix_pinky_home
-            shift: [-0.5kx-1, 0.5ky-1]
+            shift: [-0.5kx-1, 0.5ky]
           - ref: mirror_matrix_pinky_home
             shift: [-0.5kx-1, -0.5ky-1]
           - ref: mirror_thumb_home
