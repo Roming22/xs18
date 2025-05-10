@@ -43,33 +43,52 @@ units:
 points:
   zones:
     matrix:
+      anchor.shift: [200, -50]  # Fix placement on KiCAD sheet
       key:
         width: capx
         height: capy
         spread: kx
         padding: ky
       rows:
-        home: {}
-        top: {}
+        home:
+          row_net: P29
+          mirror:
+            row_net: P4
+        top:
+          row_net: P28
+          mirror:
+            row_net: P3
       columns:
         pinky:
           key:
+            column_net: P7
+            mirror:
+              column_net: P7
             splay: ring_angle+middle_angle+index_angle
           rows:
             top:
               skip: true
         ring:
           key:
+            column_net: P7
+            mirror:
+              column_net: P7
             splay: -ring_angle
             spread: kx+ring_offsetx
             stagger: ring_offsety
         middle:
           key:
+            column_net: P0
+            mirror:
+              column_net: P0
             splay: -middle_angle
             spread: kx+middle_offsetx
             stagger: middle_offsety
         index:
           key:
+            column_net: P1
+            mirror:
+              column_net: P1
             splay: -index_angle
             spread: kx+index_offsetx
             stagger: index_offsety
@@ -85,9 +104,15 @@ points:
       columns:
         home:
           key:
+            column_net: P0
+            mirror:
+              column_net: P0
             splay: -thumb_angle
         outer:
           key:
+            column_net: P1
+            mirror:
+              column_net: P1
             splay: -thumb_splay
             spread: kx+thumb_spread
             stagger: thumb_tuney
@@ -166,3 +191,17 @@ outlines:
         name: _switches
         fillet: 0.5
       - ^_mcu
+pcbs:
+  xs18:
+    outlines:
+      main:
+        outline: _board
+    footprints:
+      switches:
+        what: choc
+        where:
+          - /matrix_.*/
+          - /thumb_.*/
+        params:
+          from: "{{colrow}}"
+          to: "{{column_net}}"

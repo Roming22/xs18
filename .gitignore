@@ -1,4 +1,5 @@
 *.bak
+*.lck
 *.tmp
 
 # Python/uv - Files automatically generated on devcontainer start
