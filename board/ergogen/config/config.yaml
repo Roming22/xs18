@@ -110,26 +110,26 @@ outlines:
             shift: [0.5kx+1, 0.5ky+10]
           - ref: thumb_outer
             shift: [0.5kx+1, -0.5ky-1]
-          - ref: thumb_home
-            shift: [-0.5kx, -0.5ky]
+          - ref: matrix_index_home
+            shift: [0, -0.5ky-20]
           - ref: matrix_pinky_home
             shift: [-0.5kx-1, -0.5ky-1]
           - ref: matrix_pinky_home
             shift: [-0.5kx-1, 0.5ky]
           - ref: matrix_middle_top
-            shift: [-1.5kx-3, 0.5ky+1]
+            shift: [-1.5kx-2.5, 0.5ky+1]
           - ref: matrix_middle_top
-            shift: [1.5kx, 0.5ky+1]
+            shift: [1.5kx-2, 0.5ky+1]
           - ref: mirror_matrix_middle_top
-            shift: [1.5kx, 0.5ky+1]
+            shift: [1.5kx-2, 0.5ky+1]
           - ref: mirror_matrix_middle_top
-            shift: [-1.5kx-3, 0.5ky+1]
+            shift: [-1.5kx-2.5, 0.5ky+1]
           - ref: mirror_matrix_pinky_home
             shift: [-0.5kx-1, 0.5ky]
           - ref: mirror_matrix_pinky_home
             shift: [-0.5kx-1, -0.5ky-1]
-          - ref: mirror_thumb_home
-            shift: [-0.5kx, -0.5ky]
+          - ref: mirror_matrix_index_home
+            shift: [0, -0.5ky-20]
           - ref: mirror_thumb_outer
             shift: [0.5kx+1, -0.5ky-1]
           - ref: mirror_thumb_outer
