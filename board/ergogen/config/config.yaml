@@ -196,6 +196,47 @@ pcbs:
       main:
         outline: _board
     footprints:
+      diode_left:
+        what: UMP1NTR
+        where:
+          - matrix_middle_top
+          - matrix_middle_home
+        params: 
+          pad1: "index_{{row}}"
+          pad2: "{{row_net}}"
+          pad3: "middle_{{row}}"
+          pad4: "ring_{{row}}"
+          pad5: "pinky_{{row}}"
+        adjust:
+          shift: [0, -4.7]
+          rotate: 90
+      diode_right:
+        what: UMP1NTR
+        where:
+          - mirror_matrix_middle_top
+          - mirror_matrix_middle_home
+        params: 
+          pad1: "mirror_middle_{{row}}"
+          pad2: "{{row_net}}"
+          pad3: "mirror_index_{{row}}"
+          pad4: "mirror_pinky_{{row}}"
+          pad5: "mirror_ring_{{row}}"
+        adjust:
+          shift: [0, -4.7]
+          rotate: 90
+      diode_thumb:
+        what: UMP1NTR
+        where: 
+          - thumb_outer
+        params: 
+          pad1: "mirror_home_{{row}}"
+          pad2: "{{row_net}}"
+          pad3: "home_{{row}}"
+          pad4: "outer_{{row}}"
+          pad5: "mirror_outer_{{row}}"
+        adjust:
+          shift: [0, -4.7]
+          rotate: -90
       switches:
         what: choc
         where:
