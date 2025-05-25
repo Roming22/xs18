@@ -39,7 +39,6 @@ units:
   xiao_y: 21
   mcu_x: xiao_x
   mcu_y: xiao_y
-
 points:
   zones:
     matrix:
@@ -51,19 +50,19 @@ points:
         padding: ky
       rows:
         home:
-          row_net: P29
+          row_net: P6
           mirror:
             row_net: P4
         top:
-          row_net: P28
+          row_net: P29
           mirror:
-            row_net: P3
+            row_net: P5
       columns:
         pinky:
           key:
-            column_net: P7
+            column_net: P0
             mirror:
-              column_net: P7
+              column_net: P1
             splay: ring_angle+middle_angle+index_angle
           rows:
             top:
@@ -72,15 +71,15 @@ points:
           key:
             column_net: P7
             mirror:
-              column_net: P7
+              column_net: P2
             splay: -ring_angle
             spread: kx+ring_offsetx
             stagger: ring_offsety
         middle:
           key:
-            column_net: P0
+            column_net: P2
             mirror:
-              column_net: P0
+              column_net: P7
             splay: -middle_angle
             spread: kx+middle_offsetx
             stagger: middle_offsety
@@ -88,7 +87,7 @@ points:
           key:
             column_net: P1
             mirror:
-              column_net: P1
+              column_net: P0
             splay: -index_angle
             spread: kx+index_offsetx
             stagger: index_offsety
@@ -106,13 +105,13 @@ points:
           key:
             column_net: P0
             mirror:
-              column_net: P0
+              column_net: P1
             splay: -thumb_angle
         outer:
           key:
-            column_net: P1
+            column_net: P7
             mirror:
-              column_net: P1
+              column_net: P2
             splay: -thumb_splay
             spread: kx+thumb_spread
             stagger: thumb_tuney
@@ -205,3 +204,6 @@ pcbs:
         params:
           from: "{{colrow}}"
           to: "{{column_net}}"
+      xiao:
+        what: xiao-rp2040
+        where: mcu

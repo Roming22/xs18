@@ -2,6 +2,10 @@
 *.lck
 *.tmp
 
+# KiCAD - Temporary files
+_autosave-*.kicad_pcb
+kicad-backups/
+
 # Python/uv - Files automatically generated on devcontainer start
 tools/dependencies/python/.venv
 tools/dependencies/python/uv.lock
