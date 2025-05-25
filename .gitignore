@@ -3,7 +3,9 @@
 *.tmp
 
 # KiCAD - Temporary files
+*.kicad_prl
 _autosave-*.kicad_pcb
+fp-info-cache
 kicad-backups/
 
 # Python/uv - Files automatically generated on devcontainer start

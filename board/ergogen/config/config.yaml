@@ -191,7 +191,7 @@ outlines:
         fillet: 0.5
       - ^_mcu
 pcbs:
-  xs18:
+  kicad:
     outlines:
       main:
         outline: _board
@@ -244,6 +244,7 @@ pcbs:
           - /thumb_.*/
         params:
           from: "{{colrow}}"
+          hotswap: true
           to: "{{column_net}}"
       xiao:
         what: xiao-rp2040
