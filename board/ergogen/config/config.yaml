@@ -1,6 +1,6 @@
 meta:
-  engine: 4.1.0
-  name: xs18
+  engine: 4.2.1
+  name: xs20
   version: 0.1
   author: Roming22
   url: https://github.com/Roming22/xs18
@@ -64,9 +64,6 @@ points:
             mirror:
               column_net: P1
             splay: ring_angle+middle_angle+index_angle
-          rows:
-            top:
-              skip: true
         ring:
           key:
             column_net: P7
@@ -138,18 +135,18 @@ outlines:
             shift: [0, -0.5ky-20]
           - ref: matrix_pinky_home
             shift: [-0.5kx-1, -0.5ky-1]
-          - ref: matrix_pinky_home
-            shift: [-0.5kx-1, 0.5ky]
+          - ref: matrix_pinky_top
+            shift: [-0.5kx-1, 0.5ky+2]
           - ref: matrix_middle_top
-            shift: [-1.5kx-2.5, 0.5ky+1]
+            shift: [-0.5kx-1, 0.5ky+1]
           - ref: matrix_middle_top
-            shift: [1.5kx-2, 0.5ky+1]
+            shift: [25, 0.5ky+1]
           - ref: mirror_matrix_middle_top
-            shift: [1.5kx-2, 0.5ky+1]
+            shift: [25, 0.5ky+1]
           - ref: mirror_matrix_middle_top
-            shift: [-1.5kx-2.5, 0.5ky+1]
-          - ref: mirror_matrix_pinky_home
-            shift: [-0.5kx-1, 0.5ky]
+            shift: [-0.5kx-1, 0.5ky+1]
+          - ref: mirror_matrix_pinky_top
+            shift: [-0.5kx-1, 0.5ky+2]
           - ref: mirror_matrix_pinky_home
             shift: [-0.5kx-1, -0.5ky-1]
           - ref: mirror_matrix_index_home
