@@ -123,8 +123,70 @@ points:
       key:
         width: xiao_x
         height: xiao_y
+    screw_pinky:
+      anchor:
+        aggregate:
+          parts:
+            - matrix_pinky_home
+            - matrix_pinky_top
+            - matrix_ring_home
+            - matrix_ring_top
+      key:
+        tags:
+          - screw
+    screw_index:
+      anchor:
+        aggregate:
+          parts:
+            - matrix_middle_home
+            - matrix_middle_top
+            - matrix_index_home
+            - matrix_index_top
+      key:
+        tags:
+          - screw
+    screw_thumb:
+      anchor:
+        aggregate:
+          parts:
+            - thumb_home
+            - thumb_outer
+      key:
+        tags:
+          - screw
+    screw_mirror_thumb:
+      anchor:
+        aggregate:
+          parts:
+            - mirror_thumb_home
+            - mirror_thumb_outer
+      key:
+        tags:
+          - screw
+    screw_mirror_index:
+      anchor:
+        aggregate:
+          parts:
+            - mirror_matrix_middle_home
+            - mirror_matrix_middle_top
+            - mirror_matrix_index_home
+            - mirror_matrix_index_top
+      key:
+        tags:
+          - screw
+    screw_mirror_pinky:
+      anchor:
+        aggregate:
+          parts:
+            - mirror_matrix_pinky_home
+            - mirror_matrix_pinky_top
+            - mirror_matrix_ring_home
+            - mirror_matrix_ring_top
+      key:
+        tags:
+          - screw
 outlines:
-    __key_outline:
+    __pcb_outline:
       - what: polygon
         points:
           - ref: thumb_outer
@@ -155,8 +217,12 @@ outlines:
             shift: [0.5kx+1, -0.5ky-1]
           - ref: mirror_thumb_outer
             shift: [0.5kx+1, 0.5ky+10]
+    _screws:
+      - what: circle
+        radius: 1.2
+        where: screw
     _board:
-      - name: __key_outline
+      - name: __pcb_outline
         fillet: 6
     _keycaps:
       - what: rectangle
@@ -181,6 +247,11 @@ outlines:
       - _board
       - ^_keycaps
       - ^_mcu
+      - ^_screws
+    _pcb:
+      - _board
+      - operation: subtract
+        name: _screws
     switchplate:
       - _board
       - operation: subtract
@@ -191,7 +262,7 @@ pcbs:
   kicad:
     outlines:
       main:
-        outline: _board
+        outline: _pcb
     footprints:
       diode_left:
         what: UMP1NTR
