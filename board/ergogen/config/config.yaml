@@ -97,6 +97,9 @@ points:
         ref: matrix_index_home
         shift: [thumb_offsetx, -ky-thumb_offsety]
       key.$extends: points.zones.matrix.key
+      rows:
+        default:
+          row_net: P28
       columns:
         home:
           key:
