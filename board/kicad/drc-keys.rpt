@@ -1,0 +1,230 @@
+** Drc report for kicad.kicad_pcb **
+** Created on 2026-10-24T18:42:01 **
+** Report includes: Errors **
+
+** Found 53 DRC violations **
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(272.2000 mm, 166.8135 mm): Track [P7] on B.Cu, length 29.1865 mm
+    @(274.1022 mm, 170.9889 mm): Pad 1 [mirror_middle_home] of S13 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(276.5458 mm, 178.8954 mm): Track [mirror_middle_home] on F.Cu, length 4.5000 mm
+    @(281.1240 mm, 179.2734 mm): Pad 2 [P4] of D3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(281.0458 mm, 178.8954 mm): Track [mirror_middle_home] on F.Cu, length 0.3040 mm
+    @(281.1240 mm, 179.2734 mm): Pad 2 [P4] of D3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(165.0458 mm, 158.3954 mm): Track [middle_top] on F.Cu, length 5.0000 mm
+    @(164.5761 mm, 162.2840 mm): Pad 4 [ring_top] of D2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(176.5458 mm, 224.3954 mm): Track [outer_default] on F.Cu, length 7.0000 mm
+    @(176.2490 mm, 228.8776 mm): Pad 1 [mirror_home_default] of D5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(156.0458 mm, 173.3954 mm): Track [index_home] on F.Cu, length 6.5000 mm
+    @(156.0919 mm, 177.5898 mm): Pad 4 [ring_home] of D1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(156.0458 mm, 173.3954 mm): Track [index_home] on F.Cu, length 6.5000 mm
+    @(155.4616 mm, 178.7268 mm): Pad 5 [pinky_home] of D1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(156.5458 mm, 173.8954 mm): Track [middle_home] on F.Cu, length 4.5000 mm
+    @(156.0919 mm, 177.5898 mm): Pad 4 [ring_home] of D1 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.0750 mm; actual 0.0213 mm)
+    Rule: board setup constraints edge; error
+    @(235.5663 mm, 232.4631 mm): Arc on Edge.Cuts
+    @(236.5458 mm, 226.3954 mm): Track [mirror_outer_default] on F.Cu, length 0.5000 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.0750 mm; actual 0.0213 mm)
+    Rule: board setup constraints edge; error
+    @(235.5663 mm, 232.4631 mm): Arc on Edge.Cuts
+    @(239.5458 mm, 226.3954 mm): Track [mirror_outer_default] on F.Cu, length 3.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(206.6562 mm, 196.0000 mm): Track [P7] on B.Cu, length 4.5191 mm
+    @(198.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(208.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 8.2469 mm
+    @(171.0000 mm, 197.0000 mm): Track [P2] on B.Cu, length 62.4562 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(232.2562 mm, 200.0000 mm): Track [P1] on B.Cu, length 5.9791 mm
+    @(171.0000 mm, 197.0000 mm): Track [P2] on B.Cu, length 62.4562 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(270.3566 mm, 202.0000 mm): Track [P1] on B.Cu, length 38.1004 mm
+    @(256.8243 mm, 218.7018 mm): Track [P2] on B.Cu, length 17.2018 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(324.3362 mm, 159.2557 mm): Track [P1] on B.Cu, length 26.3362 mm
+    @(304.5000 mm, 147.0797 mm): Track [P2] on B.Cu, length 15.5926 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(232.2562 mm, 202.0000 mm): Track [P1] on B.Cu, length 7.9791 mm
+    @(171.0000 mm, 197.0000 mm): Track [P2] on B.Cu, length 62.4562 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(232.2562 mm, 200.0000 mm): Track [P1] on B.Cu, length 5.9791 mm
+    @(171.0000 mm, 197.0000 mm): Track [P2] on B.Cu, length 62.4562 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(294.5000 mm, 167.0000 mm): Track [P1] on B.Cu, length 33.0000 mm
+    @(304.5000 mm, 180.0000 mm): Track [P2] on B.Cu, length 19.5000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(233.4562 mm, 201.5000 mm): Track [P2] on B.Cu, length 10.0191 mm
+    @(294.5000 mm, 200.0000 mm): Track [P1] on B.Cu, length 62.2438 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1591 mm)
+    Local override; error
+    @(166.2726 mm, 163.9676 mm): Pad 2 [P29] of D2 on F.Cu
+    @(166.0458 mm, 168.8954 mm): Track [index_top] on F.Cu, length 4.5000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(156.0458 mm, 177.3954 mm): Track [ring_home] on F.Cu, length 0.1998 mm
+    @(156.0458 mm, 173.3954 mm): Track [index_home] on F.Cu, length 6.5000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(143.0458 mm, 177.3954 mm): Track [ring_home] on F.Cu, length 13.0000 mm
+    @(156.0458 mm, 173.3954 mm): Track [index_home] on F.Cu, length 6.5000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(171.0000 mm, 175.3371 mm): Track [P2] on B.Cu, length 21.6629 mm
+    @(151.8000 mm, 196.0000 mm): Track [P7] on B.Cu, length 54.8562 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1591 mm)
+    Local override; error
+    @(166.2726 mm, 163.9676 mm): Pad 2 [P29] of D2 on F.Cu
+    @(166.0458 mm, 164.3954 mm): Track [index_top] on F.Cu, length 0.1661 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(295.8766 mm, 147.0797 mm): Track [P2] on B.Cu, length 8.6234 mm
+    @(298.0000 mm, 142.8111 mm): Track [P1] on B.Cu, length 16.4446 mm
+[shorting_items]: Items shorting two nets (nets ring_top and middle_top)
+    Local override; error
+    @(164.5761 mm, 162.2840 mm): Pad 4 [ring_top] of D2 on F.Cu
+    @(165.0458 mm, 158.3954 mm): Track [middle_top] on F.Cu, length 5.0000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0783 mm)
+    Local override; error
+    @(166.2726 mm, 163.9676 mm): Pad 2 [P29] of D2 on F.Cu
+    @(165.0458 mm, 163.3954 mm): Track [middle_top] on F.Cu, length 1.5000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1304 mm)
+    Local override; error
+    @(158.0458 mm, 178.8954 mm): Track [middle_home] on F.Cu, length 0.1990 mm
+    @(157.7884 mm, 179.2734 mm): Pad 2 [P6] of D1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1304 mm)
+    Local override; error
+    @(158.0458 mm, 178.3954 mm): Track [middle_home] on F.Cu, length 0.5000 mm
+    @(157.7884 mm, 179.2734 mm): Pad 2 [P6] of D1 on F.Cu
+[shorting_items]: Items shorting two nets (nets index_home and ring_home)
+    Local override; error
+    @(156.0458 mm, 173.3954 mm): Track [index_home] on F.Cu, length 6.5000 mm
+    @(156.0919 mm, 177.5898 mm): Pad 4 [ring_home] of D1 on F.Cu
+[shorting_items]: Items shorting two nets (nets middle_home and ring_home)
+    Local override; error
+    @(156.5458 mm, 173.8954 mm): Track [middle_home] on F.Cu, length 4.5000 mm
+    @(156.0919 mm, 177.5898 mm): Pad 4 [ring_home] of D1 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1535 mm)
+    Local override; error
+    @(283.5458 mm, 173.3954 mm): Track [mirror_pinky_home] on F.Cu, length 5.5000 mm
+    @(282.8205 mm, 177.5898 mm): Pad 5 [mirror_ring_home] of D3 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0435 mm)
+    Local override; error
+    @(281.1240 mm, 179.2734 mm): Pad 2 [P4] of D3 on F.Cu
+    @(281.0458 mm, 178.8954 mm): Track [mirror_middle_home] on F.Cu, length 0.3040 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1360 mm)
+    Local override; error
+    @(281.1240 mm, 179.2734 mm): Track [P4] on F.Cu, length 2.5000 mm
+    @(276.5458 mm, 178.8954 mm): Track [mirror_middle_home] on F.Cu, length 4.5000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0435 mm)
+    Local override; error
+    @(276.5458 mm, 178.8954 mm): Track [mirror_middle_home] on F.Cu, length 4.5000 mm
+    @(281.1240 mm, 179.2734 mm): Pad 2 [P4] of D3 on F.Cu
+[shorting_items]: Items shorting two nets (nets outer_default and mirror_home_default)
+    Local override; error
+    @(176.5458 mm, 224.3954 mm): Track [outer_default] on F.Cu, length 7.0000 mm
+    @(176.2490 mm, 228.8776 mm): Pad 1 [mirror_home_default] of D5 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1432 mm)
+    Local override; error
+    @(175.6978 mm, 229.2220 mm): Pad 2 [P28] of D5 on F.Cu
+    @(176.0458 mm, 218.8954 mm): Track [mirror_home_default] on F.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(205.4562 mm, 194.0209 mm): Track [P0] on B.Cu, length 6.3800 mm
+    @(206.6562 mm, 196.0000 mm): Track [P7] on B.Cu, length 4.5191 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(205.4562 mm, 194.0209 mm): Track [P0] on B.Cu, length 6.3800 mm
+    @(206.6562 mm, 196.0000 mm): Track [P7] on B.Cu, length 4.5191 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(205.4562 mm, 194.0209 mm): Track [P0] on B.Cu, length 6.3800 mm
+    @(206.6562 mm, 196.0000 mm): Track [P7] on B.Cu, length 4.5191 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1432 mm)
+    Local override; error
+    @(175.6978 mm, 229.2220 mm): Pad 2 [P28] of D5 on F.Cu
+    @(176.0458 mm, 228.8954 mm): Track [mirror_home_default] on F.Cu, length 0.2040 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(205.4562 mm, 201.5000 mm): Track [P0] on B.Cu, length 7.4791 mm
+    @(190.8583 mm, 200.5000 mm): Track [P7] on B.Cu, length 15.7979 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(179.8429 mm, 201.5000 mm): Track [P0] on B.Cu, length 25.6133 mm
+    @(190.8583 mm, 232.7370 mm): Track [P7] on B.Cu, length 32.2370 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1041 mm)
+    Local override; error
+    @(227.0762 mm, 194.0209 mm): PTH pad 7 [P1] of MCU1
+    @(250.0000 mm, 195.0000 mm): Track [P0] on B.Cu, length 44.5438 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(206.6562 mm, 196.0000 mm): Track [P7] on B.Cu, length 4.5191 mm
+    @(198.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 10.0000 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0222 mm)
+    Local override; error
+    @(206.6562 mm, 191.4809 mm): Track [P7] on B.Cu, length 5.1800 mm
+    @(198.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(206.6562 mm, 200.5000 mm): Track [P7] on B.Cu, length 9.0191 mm
+    @(171.0000 mm, 197.0000 mm): Track [P2] on B.Cu, length 62.4562 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0222 mm)
+    Local override; error
+    @(206.6562 mm, 191.4809 mm): Track [P7] on B.Cu, length 5.1800 mm
+    @(198.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(151.8000 mm, 170.1859 mm): Track [P7] on B.Cu, length 25.8141 mm
+    @(137.4000 mm, 195.0000 mm): Track [P0] on B.Cu, length 68.0562 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0099 mm)
+    Local override; error
+    @(274.1022 mm, 170.9889 mm): Pad 1 [mirror_middle_home] of S13 on B.Cu
+    @(272.2000 mm, 166.8135 mm): Track [P7] on B.Cu, length 29.1865 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0222 mm)
+    Local override; error
+    @(206.6562 mm, 191.4809 mm): Track [P7] on B.Cu, length 5.1800 mm
+    @(198.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(272.2000 mm, 196.0000 mm): Track [P7] on B.Cu, length 65.5438 mm
+    @(232.2562 mm, 202.0000 mm): Track [P1] on B.Cu, length 7.9791 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1377 mm)
+    Local override; error
+    @(274.3363 mm, 162.2840 mm): Pad 5 [mirror_ring_top] of D4 on F.Cu
+    @(275.0458 mm, 157.8954 mm): Track [mirror_pinky_top] on F.Cu, length 5.5000 mm
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

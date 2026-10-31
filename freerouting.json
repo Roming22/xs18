@@ -1,0 +1,4 @@
+{
+  "gui": { "enabled": false },
+  "usage_and_diagnostic_data": { "disable_upload": true, "is_allowed": false }
+}

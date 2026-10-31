@@ -1,0 +1,198 @@
+** Drc report for kicad.kicad_pcb **
+** Created on 2026-10-24T18:19:25 **
+** Report includes: Errors **
+
+** Found 25 DRC violations **
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(272.2000 mm, 166.8135 mm): Track [P7] on B.Cu, length 29.1865 mm
+    @(274.1022 mm, 170.9889 mm): Pad 1 [mirror_middle_home] of S13 on B.Cu
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(190.8583 mm, 232.7370 mm): Track [P7] on B.Cu, length 32.2370 mm
+    @(179.8429 mm, 201.5000 mm): Track [P0] on B.Cu, length 25.6133 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(206.6562 mm, 196.0000 mm): Track [P7] on B.Cu, length 4.5191 mm
+    @(205.4562 mm, 194.0209 mm): Track [P0] on B.Cu, length 6.3800 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(137.4000 mm, 195.0000 mm): Track [P0] on B.Cu, length 68.0562 mm
+    @(151.8000 mm, 170.1859 mm): Track [P7] on B.Cu, length 25.8141 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0222 mm)
+    Local override; error
+    @(206.6562 mm, 191.4809 mm): Track [P7] on B.Cu, length 5.1800 mm
+    @(198.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(206.6562 mm, 200.5000 mm): Track [P7] on B.Cu, length 9.0191 mm
+    @(205.4562 mm, 194.0209 mm): Track [P0] on B.Cu, length 6.3800 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(208.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 8.2469 mm
+    @(272.2000 mm, 196.0000 mm): Track [P7] on B.Cu, length 65.5438 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(298.0000 mm, 142.8111 mm): Track [P1] on B.Cu, length 16.4446 mm
+    @(295.8766 mm, 147.0797 mm): Track [P2] on B.Cu, length 8.6234 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(232.2562 mm, 200.0000 mm): Track [P1] on B.Cu, length 5.9791 mm
+    @(272.2000 mm, 196.0000 mm): Track [P7] on B.Cu, length 65.5438 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(304.5000 mm, 147.0797 mm): Track [P2] on B.Cu, length 15.5926 mm
+    @(324.3362 mm, 159.2557 mm): Track [P1] on B.Cu, length 26.3362 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(256.8243 mm, 218.7018 mm): Track [P2] on B.Cu, length 17.2018 mm
+    @(270.3566 mm, 202.0000 mm): Track [P1] on B.Cu, length 38.1004 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(171.0000 mm, 197.0000 mm): Track [P2] on B.Cu, length 62.4562 mm
+    @(232.2562 mm, 202.0000 mm): Track [P1] on B.Cu, length 7.9791 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(171.0000 mm, 175.3371 mm): Track [P2] on B.Cu, length 21.6629 mm
+    @(137.4000 mm, 195.0000 mm): Track [P0] on B.Cu, length 68.0562 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(304.5000 mm, 180.0000 mm): Track [P2] on B.Cu, length 19.5000 mm
+    @(294.5000 mm, 167.0000 mm): Track [P1] on B.Cu, length 33.0000 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(250.0000 mm, 195.0000 mm): Track [P0] on B.Cu, length 44.5438 mm
+    @(232.2562 mm, 200.0000 mm): Track [P1] on B.Cu, length 5.9791 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(190.8583 mm, 200.5000 mm): Track [P7] on B.Cu, length 15.7979 mm
+    @(205.4562 mm, 201.5000 mm): Track [P0] on B.Cu, length 7.4791 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(151.8000 mm, 196.0000 mm): Track [P7] on B.Cu, length 54.8562 mm
+    @(205.4562 mm, 201.5000 mm): Track [P0] on B.Cu, length 7.4791 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0222 mm)
+    Local override; error
+    @(198.0000 mm, 191.7531 mm): Track [P1] on B.Cu, length 10.0000 mm
+    @(206.6562 mm, 191.4809 mm): Track [P7] on B.Cu, length 5.1800 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(206.6562 mm, 196.0000 mm): Track [P7] on B.Cu, length 4.5191 mm
+    @(250.0000 mm, 195.0000 mm): Track [P0] on B.Cu, length 44.5438 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(272.2000 mm, 196.0000 mm): Track [P7] on B.Cu, length 65.5438 mm
+    @(232.2562 mm, 202.0000 mm): Track [P1] on B.Cu, length 7.9791 mm
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0099 mm)
+    Local override; error
+    @(274.1022 mm, 170.9889 mm): Pad 1 [mirror_middle_home] of S13 on B.Cu
+    @(272.2000 mm, 166.8135 mm): Track [P7] on B.Cu, length 29.1865 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(205.4562 mm, 194.0209 mm): Track [P0] on B.Cu, length 6.3800 mm
+    @(206.6562 mm, 196.0000 mm): Track [P7] on B.Cu, length 4.5191 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(294.5000 mm, 200.0000 mm): Track [P1] on B.Cu, length 62.2438 mm
+    @(233.4562 mm, 201.5000 mm): Track [P2] on B.Cu, length 10.0191 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(232.2562 mm, 202.0000 mm): Track [P1] on B.Cu, length 7.9791 mm
+    @(250.0000 mm, 195.0000 mm): Track [P0] on B.Cu, length 44.5438 mm
+[tracks_crossing]: Tracks crossing
+    Local override; error
+    @(205.4562 mm, 194.0209 mm): Track [P0] on B.Cu, length 6.3800 mm
+    @(206.6562 mm, 200.5000 mm): Track [P7] on B.Cu, length 9.0191 mm
+
+** Found 20 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(148.4896 mm, 147.3894 mm): Pad 1 [ring_top] of S4 on B.Cu
+    @(164.5761 mm, 162.2840 mm): Pad 4 [ring_top] of D2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(265.6180 mm, 155.6831 mm): Pad 1 [mirror_middle_top] of S14 on B.Cu
+    @(272.3247 mm, 163.3991 mm): Pad 1 [mirror_middle_top] of D4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(259.3716 mm, 186.8538 mm): Pad 1 [mirror_index_home] of S15 on B.Cu
+    @(281.4391 mm, 179.8419 mm): Pad 3 [mirror_index_home] of D3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(176.2490 mm, 228.8776 mm): Pad 1 [mirror_home_default] of D5 on F.Cu
+    @(263.8705 mm, 210.4185 mm): Pad 1 [mirror_home_default] of S19 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(170.5748 mm, 205.6282 mm): Pad 1 [home_default] of S17 on B.Cu
+    @(175.1465 mm, 229.5665 mm): Pad 3 [home_default] of D5 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(176.3654 mm, 231.5170 mm): Pad 4 [outer_default] of D5 on F.Cu
+    @(183.6034 mm, 221.7763 mm): Pad 1 [outer_default] of S18 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(177.4678 mm, 230.8281 mm): Pad 5 [mirror_outer_default] of D5 on F.Cu
+    @(251.8380 mm, 227.3310 mm): Pad 1 [mirror_outer_default] of S20 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(274.1022 mm, 170.9889 mm): Pad 1 [mirror_middle_home] of S13 on B.Cu
+    @(280.8089 mm, 178.7049 mm): Pad 1 [mirror_middle_home] of D3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(283.4507 mm, 178.7268 mm): Pad 4 [mirror_pinky_home] of D3 on F.Cu
+    @(312.7304 mm, 162.3887 mm): Pad 1 [mirror_pinky_home] of S9 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(282.8205 mm, 177.5898 mm): Pad 5 [mirror_ring_home] of D3 on F.Cu
+    @(292.5315 mm, 165.9557 mm): Pad 1 [mirror_ring_home] of S11 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(166.5877 mm, 163.3991 mm): Pad 3 [middle_top] of D2 on F.Cu
+    @(167.5656 mm, 152.5076 mm): Pad 1 [middle_top] of S6 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(165.9574 mm, 164.5361 mm): Pad 1 [index_top] of D2 on F.Cu
+    @(185.7720 mm, 169.2378 mm): Pad 1 [index_top] of S8 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.0124 mm, 143.7038 mm): Pad 1 [pinky_top] of S2 on B.Cu
+    @(163.9458 mm, 163.4210 mm): Pad 5 [pinky_top] of D2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(274.3363 mm, 162.2840 mm): Pad 5 [mirror_ring_top] of D4 on F.Cu
+    @(284.5867 mm, 150.3631 mm): Pad 1 [mirror_ring_top] of S12 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(140.5448 mm, 162.9821 mm): Pad 1 [ring_home] of S3 on B.Cu
+    @(156.0919 mm, 177.5898 mm): Pad 4 [ring_home] of D1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(248.1228 mm, 173.4481 mm): Pad 1 [mirror_index_top] of S16 on B.Cu
+    @(272.9549 mm, 164.5361 mm): Pad 3 [mirror_index_top] of D4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(157.4733 mm, 179.8419 mm): Pad 1 [index_home] of D1 on F.Cu
+    @(174.5232 mm, 182.6436 mm): Pad 1 [index_home] of S7 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(158.1035 mm, 178.7049 mm): Pad 3 [middle_home] of D1 on F.Cu
+    @(159.0814 mm, 167.8134 mm): Pad 1 [middle_home] of S5 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(120.0270 mm, 160.1485 mm): Pad 1 [pinky_home] of S1 on B.Cu
+    @(155.4616 mm, 178.7268 mm): Pad 5 [pinky_home] of D1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(274.9666 mm, 163.4210 mm): Pad 4 [mirror_pinky_top] of D4 on F.Cu
+    @(306.7450 mm, 145.9441 mm): Pad 1 [mirror_pinky_top] of S10 on B.Cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
